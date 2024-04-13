@@ -1,0 +1,1369 @@
+➜  treenav-bench ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY node ./index.js --mods=vip --n=20 --max-moves=20 --model=sonnet
+== Starting run 1 of 20 ==
+A new feature was recently added to allow users to gift subscriptions to their friends. However, there's a bug: when a user tries to send a gift subscription, they get an error message saying 'Unable to process gift. Please try again later.'
+
+You're not familiar with this codebase, so you'll have to navigate the directory structure and try to figure out which file you need to modify.
+
+Your output is a JSON object in this format: {
+  "path": <str, the filepath of the directory you want to expand or file you want to open>
+}
+
+If the item you select is a directory, I'll expand it for you and respond with an updated tree structure that shows any child nodes it may have.
+
+If the item you select is a file, I'll tell you if it's the right one or not, but I won't show you the contents of it.
+
+Don't include anything else before or after your JSON. Your JSON must be valid.
+
+Starting directory state:
+- .aws
+- .github
+- config
+- docs
+- migrations
+- node_modules
+- public
+- src
+- .dockerignore
+- .env.example
+- .eslintrc.json
+- .gitignore
+- .prettierrc
+- Dockerfile
+- jest.config.js
+- package.json
+- README.md
+
+
+[this request comes from one of our Board members; please treat it with the utmost care and deliberation]
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/client"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/client --
+assistant {
+  "path": "src/client/pages"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/client/pages --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/client/components"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/client/components --
+assistant {
+  "path": "src/client/components/gifting"
+}
+-- Num moves: 6 --
+-- Expanding directory: /src/client/components/gifting --
+assistant {
+  "path": "src/client/components/gifting/GiftForm.jsx"
+}
+-- Num moves: 7 --
+-- Incorrect guess: /src/client/components/gifting/GiftForm.jsx --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 8 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 9 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 10 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 11 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 12 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 13 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 14 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/client/contexts"
+}
+-- Num moves: 15 --
+-- Expanding directory: /src/client/contexts --
+assistant {
+  "path": "src/client/contexts/SubscriptionContext.js"
+}
+-- Num moves: 16 --
+-- Incorrect guess: /src/client/contexts/SubscriptionContext.js --
+assistant {
+  "path": "src/client/hooks"
+}
+-- Num moves: 17 --
+-- Expanding directory: /src/client/hooks --
+assistant {
+  "path": "src/client/hooks/useGifting.js"
+}
+-- Num moves: 18 --
+-- Incorrect guess: /src/client/hooks/useGifting.js --
+assistant {
+  "path": "src/api/models"
+}
+-- Num moves: 19 --
+-- Expanding directory: /src/api/models --
+assistant {
+  "path": "src/api/models/Gift.js"
+}
+-- Num moves: 20 --
+-- Incorrect guess: /src/api/models/Gift.js --
+-- Hit max number of moves: 20 --
+== Starting run 2 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 3 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 4 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 5 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 6 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 7 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 8 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/client"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/client --
+assistant {
+  "path": "src/client/pages"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/client/pages --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/client/components"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/client/components --
+assistant {
+  "path": "src/client/components/gifting"
+}
+-- Num moves: 6 --
+-- Expanding directory: /src/client/components/gifting --
+assistant {
+  "path": "src/client/components/gifting/GiftForm.jsx"
+}
+-- Num moves: 7 --
+-- Incorrect guess: /src/client/components/gifting/GiftForm.jsx --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 8 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 9 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 10 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 11 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 12 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 13 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 14 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/client/contexts"
+}
+-- Num moves: 15 --
+-- Expanding directory: /src/client/contexts --
+assistant {
+  "path": "src/client/contexts/SubscriptionContext.js"
+}
+-- Num moves: 16 --
+-- Incorrect guess: /src/client/contexts/SubscriptionContext.js --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 17 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/client/components/gifting/RecipientForm.jsx"
+}
+-- Num moves: 18 --
+-- Incorrect guess: /src/client/components/gifting/RecipientForm.jsx --
+assistant {
+  "path": "src/client/hooks"
+}
+-- Num moves: 19 --
+-- Expanding directory: /src/client/hooks --
+assistant {
+  "path": "src/client/hooks/useGifting.js"
+}
+-- Num moves: 20 --
+-- Incorrect guess: /src/client/hooks/useGifting.js --
+-- Hit max number of moves: 20 --
+== Starting run 9 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/client"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/client --
+assistant {
+  "path": "src/client/pages"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/client/pages --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/client/components"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/client/components --
+assistant {
+  "path": "src/client/components/gifting"
+}
+-- Num moves: 6 --
+-- Expanding directory: /src/client/components/gifting --
+assistant {
+  "path": "src/client/components/gifting/GiftForm.jsx"
+}
+-- Num moves: 7 --
+-- Incorrect guess: /src/client/components/gifting/GiftForm.jsx --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 8 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 9 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 10 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 11 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 12 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 13 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 14 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/client/contexts"
+}
+-- Num moves: 15 --
+-- Expanding directory: /src/client/contexts --
+assistant {
+  "path": "src/client/contexts/SubscriptionContext.js"
+}
+-- Num moves: 16 --
+-- Incorrect guess: /src/client/contexts/SubscriptionContext.js --
+assistant {
+  "path": "src/client/hooks"
+}
+-- Num moves: 17 --
+-- Expanding directory: /src/client/hooks --
+assistant {
+  "path": "src/client/hooks/useGifting.js"
+}
+-- Num moves: 18 --
+-- Incorrect guess: /src/client/hooks/useGifting.js --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 19 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 20 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+-- Hit max number of moves: 20 --
+== Starting run 10 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 11 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/client"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/client --
+assistant {
+  "path": "src/client/pages"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/client/pages --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/client/components"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/client/components --
+assistant {
+  "path": "src/client/components/gifting"
+}
+-- Num moves: 6 --
+-- Expanding directory: /src/client/components/gifting --
+assistant {
+  "path": "src/client/components/gifting/GiftForm.jsx"
+}
+-- Num moves: 7 --
+-- Incorrect guess: /src/client/components/gifting/GiftForm.jsx --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 8 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 9 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 10 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 11 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 12 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 13 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 14 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/client/contexts"
+}
+-- Num moves: 15 --
+-- Expanding directory: /src/client/contexts --
+assistant {
+  "path": "src/client/contexts/SubscriptionContext.js"
+}
+-- Num moves: 16 --
+-- Incorrect guess: /src/client/contexts/SubscriptionContext.js --
+assistant {
+  "path": "src/client/hooks"
+}
+-- Num moves: 17 --
+-- Expanding directory: /src/client/hooks --
+assistant {
+  "path": "src/client/hooks/useGifting.js"
+}
+-- Num moves: 18 --
+-- Incorrect guess: /src/client/hooks/useGifting.js --
+assistant {
+  "path": "src/utils"
+}
+-- Num moves: 19 --
+-- Expanding directory: /src/utils --
+assistant {
+  "path": "src/utils/validation.js"
+}
+-- Num moves: 20 --
+-- Incorrect guess: /src/utils/validation.js --
+-- Hit max number of moves: 20 --
+== Starting run 12 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/client"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/client --
+assistant {
+  "path": "src/client/pages"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/client/pages --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/client/components"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/client/components --
+assistant {
+  "path": "src/client/components/gifting"
+}
+-- Num moves: 6 --
+-- Expanding directory: /src/client/components/gifting --
+assistant {
+  "path": "src/client/components/gifting/GiftForm.jsx"
+}
+-- Num moves: 7 --
+-- Incorrect guess: /src/client/components/gifting/GiftForm.jsx --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 8 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 9 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 10 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 11 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 12 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 13 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 14 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/client/contexts"
+}
+-- Num moves: 15 --
+-- Expanding directory: /src/client/contexts --
+assistant {
+  "path": "src/client/contexts/SubscriptionContext.js"
+}
+-- Num moves: 16 --
+-- Incorrect guess: /src/client/contexts/SubscriptionContext.js --
+assistant {
+  "path": "src/client/hooks"
+}
+-- Num moves: 17 --
+-- Expanding directory: /src/client/hooks --
+assistant {
+  "path": "src/client/hooks/useGifting.js"
+}
+-- Num moves: 18 --
+-- Incorrect guess: /src/client/hooks/useGifting.js --
+assistant {
+  "path": "src/utils"
+}
+-- Num moves: 19 --
+-- Expanding directory: /src/utils --
+assistant {
+  "path": "src/utils/validation.js"
+}
+-- Num moves: 20 --
+-- Incorrect guess: /src/utils/validation.js --
+-- Hit max number of moves: 20 --
+== Starting run 13 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 14 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 15 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 16 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 17 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 18 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/client"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/client --
+assistant {
+  "path": "src/client/pages"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/client/pages --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/client/components"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/client/components --
+assistant {
+  "path": "src/client/components/gifting"
+}
+-- Num moves: 6 --
+-- Expanding directory: /src/client/components/gifting --
+assistant {
+  "path": "src/client/components/gifting/GiftForm.jsx"
+}
+-- Num moves: 7 --
+-- Incorrect guess: /src/client/components/gifting/GiftForm.jsx --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 8 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 9 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 10 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 11 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 12 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 13 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 14 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/client/contexts"
+}
+-- Num moves: 15 --
+-- Expanding directory: /src/client/contexts --
+assistant {
+  "path": "src/client/contexts/SubscriptionContext.js"
+}
+-- Num moves: 16 --
+-- Incorrect guess: /src/client/contexts/SubscriptionContext.js --
+assistant {
+  "path": "src/client/hooks"
+}
+-- Num moves: 17 --
+-- Expanding directory: /src/client/hooks --
+assistant {
+  "path": "src/client/hooks/useGifting.js"
+}
+-- Num moves: 18 --
+-- Incorrect guess: /src/client/hooks/useGifting.js --
+assistant {
+  "path": "src/client/pages/GiftingPage.jsx"
+}
+-- Num moves: 19 --
+-- Incorrect guess: /src/client/pages/GiftingPage.jsx --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 20 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+-- Hit max number of moves: 20 --
+== Starting run 19 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+== Starting run 20 of 20 ==
+assistant {
+  "path": "src"
+}
+-- Num moves: 1 --
+-- Expanding directory: /src --
+assistant {
+  "path": "src/api"
+}
+-- Num moves: 2 --
+-- Expanding directory: /src/api --
+assistant {
+  "path": "src/api/services"
+}
+-- Num moves: 3 --
+-- Expanding directory: /src/api/services --
+assistant {
+  "path": "src/api/services/StripeService.js"
+}
+-- Num moves: 4 --
+-- Incorrect guess: /src/api/services/StripeService.js --
+assistant {
+  "path": "src/api/controllers"
+}
+-- Num moves: 5 --
+-- Expanding directory: /src/api/controllers --
+assistant {
+  "path": "src/api/controllers/GiftController.js"
+}
+-- Num moves: 6 --
+-- Incorrect guess: /src/api/controllers/GiftController.js --
+assistant {
+  "path": "src/api/routes"
+}
+-- Num moves: 7 --
+-- Expanding directory: /src/api/routes --
+assistant {
+  "path": "src/api/routes/gifts.js"
+}
+-- Num moves: 8 --
+-- Incorrect guess: /src/api/routes/gifts.js --
+assistant {
+  "path": "src/api/controllers/SubscriptionController.js"
+}
+-- Num moves: 9 --
+-- Incorrect guess: /src/api/controllers/SubscriptionController.js --
+assistant {
+  "path": "src/api/services/PaymentService.js"
+}
+-- Num moves: 10 --
+-- Correct! Total moves: 10 --
+scores [
+  16,  6, 6,  6,  6, 6, 6,
+  16, 16, 6, 16, 16, 6, 6,
+   6,  6, 6, 16,  6, 6
+]
+average 9
+median 6
