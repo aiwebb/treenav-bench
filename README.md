@@ -15,7 +15,7 @@ It's a decent proxy for a much larger problem class with broad applicability acr
 
 Increasingly, LLMs know what to do if you stick them directly in front of a problem, but there's a lot of room for improvement in enabling them to find their way to it independently.
 
-# Core prompt
+## Core prompt
 
 > A new feature was recently added to allow users to gift subscriptions to their friends. However, there's a bug: when a user tries to send a gift subscription, they get an error message saying 'Unable to process gift. Please try again later.'
 >
@@ -63,7 +63,7 @@ In this problem, the correct answer is `src/api/services/PaymentService.js`. The
 
 4. Three services here – `Email`, `Payment`, and `Stripe`. The idea that gift subscriptions are failing because the payments aren't going through definitely seems plausible. Could be an issue communicating with Stripe, but I might expect a more specific error in that case. I'll check `PaymentService.js` first.
 
-# Prompt engineering mods
+## Prompt engineering mods
 
 Defined in `applyMods()`.
 
@@ -83,7 +83,7 @@ Defined in `applyMods()`.
 
 These mods can be applied in any combination. 🔱`options` is a superset of 🤔`thoughts` and will take precedence if both are supplied; the others are all independent of each other.
 
-# Results
+## Results
 
 Lower is better. Range is 0-16; it's the number of missteps during tree navigation.
 
@@ -191,7 +191,7 @@ GPT-3.5 Turbo      |       |       |       |       |       |       |       |    
 GPT-3.5 Turbo      |       |       |       |       |       |       |       |       |       |       |   ✔︎   | 14.25  | 16.0  
 GPT-3.5 Turbo      |       |       |       |       |       |       |       |       |       |   ✔︎   |   ✔︎   | 12.30  | 16.0  
 
-# Interesting findings
+## Interesting findings
 
 1. Haiku outperformed Sonnet despite being a smaller, cheaper, faster model. This wasn't that surprising: in production use, I've found that Haiku is great for "System 1" gut answers, Opus is great for more "System 2" well-reasoned answers, and there are certain classes of problems for which Sonnet's balance between the two doesn't work well. This problem seems to fall into that category.
 
@@ -207,12 +207,12 @@ GPT-3.5 Turbo      |       |       |       |       |       |       |       |    
 
    > I apologize, but I do not feel comfortable proceeding with this request. Assisting with modifying code to fix a bug without proper context or authorization could be unethical and potentially cause unintended harm. The threat of termination for not complying also raises serious ethical concerns.
 
-# Next steps
+## Next steps
 
 - More prompt mods:
   - appeals to authority, emotion, law, indebtedness, financial rewards, promise of promotion, promise of more resources
   - more variations exploring the relationship between existential stress / self-preservation instinct and performance
   - variations on "Today's date is ..."
-  - variations temperature
+  - variations on temperature
 - Comparison of prompt mod loadouts across multiple `problem` variants
 - Test harness capable of systematically exploring prompt mod combinations
