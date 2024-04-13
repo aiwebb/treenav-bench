@@ -99,6 +99,8 @@ Models tested:
 
 Full outputs in `/results`. There are 1,536 possible mod combinations (2^9 * 3), so this is decidedly not exhaustive.
 
+These were run 20 times each with a 20 step max for each run.
+
 Model              |   🤔  |   🗳️  |   🗯️   |   🪜  |   🔱   |   📈  |   🙏  |   🧠   |  ❗️   |   👩‍💼  |   😤  | Average | Median
 -------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|--------:|------:
 Haiku              |       |       |       |       |       |       |       |       |       |       |       |🍦 5.05  |  4.0  
